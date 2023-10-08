@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>M07 Programming Assignment 1 - Loan Calculation</title>
+</head>
+
+<body>
+<!-- Created form to able to send the data to index.jsp (which will display the loan calculation) and to able for the
+     user to input texts (as number) for the loan info to be calculated -->
+<form method="get" action="index.jsp">
+
+    <!-- Lines 14-18, asking for the user input for the loan amount, annual interest rate and number of years
+         (as text but it'll be number in format) -->
+    <p>
+        Compute Loan Payment
+        <br><br>
+        Loan Amount <input type="text" name="loanAmount" /><br>
+        Annual Interest Rate <input type="text" name="annualInterestRate" /><br>
+        Number of Years <input type="text" name="numberOfYears" size="3" /><br>
+    </p>
+
+<!-- Lines 25-26 are for the user to click on the submit button (to get the loan info) or rest button
+     (to reenter the entries. If the user click the 'Submit' button it should take to the index.jsp page and
+     it should display the loan calculation -->
+    <p>
+        <input type="submit" name="Submit" value="Compute Loan Payment">
+        <input type="reset" value="Reset">
+    </p>
+</form>
+
+</body>
+</html>
